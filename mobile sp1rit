@@ -24,7 +24,7 @@ local AIMTab = Window:MakeTab({
 })
 
 AIMTab:AddButton({
-	Name = "Your script as been finish",
+	Name = "Your script as been expired",
 	Callback = function()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/Exunys/Aimbot-V2/main/Resources/Scripts/Main.lua'))()
   	end    
