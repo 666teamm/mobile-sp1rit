@@ -18,34 +18,14 @@ OrionLib:MakeNotification({
 })
 
 local AIMTab = Window:MakeTab({
-	Name = "AIMBOT",
+	Name = "Finished",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
 
 AIMTab:AddButton({
-	Name = "Aimbot",
+	Name = "Your script as been finish",
 	Callback = function()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/Exunys/Aimbot-V2/main/Resources/Scripts/Main.lua'))()
   	end    
-})
 
-local ESPTab = Window:MakeTab({
-	Name = "ESP",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
-ESPTab:AddButton({
-	Name = "Name esp",
-	Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/ESP-Script/main/ESP.lua"))()
-  	end    
-})
-
-ESPTab:AddButton({
-	Name = "Box ESP",
-	Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/Boxes-Script/main/Boxes%20Script.lua"))()
-  	end    
-})
